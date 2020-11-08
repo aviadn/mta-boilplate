@@ -1,7 +1,7 @@
 {
-  "name": "preset",
-  "version": "1.0.0",
-  "description": "",
+  "name": "mta-boiplate",
+  "version": "1.0.1",
+  "description": "Laravel Mix, Tailwind CSS and Alpine.js Boilplate preset",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",
