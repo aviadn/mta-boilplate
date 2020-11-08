@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTA Boilplate</title>
+    <link rel="stylesheet" href="dist/app.css">
+    <script src="dist/app.js"></script>
+</head>
+
+<body>
+
+    <div class="w-full h-screen bg-orange-300 flex flex-col items-center justify-center" x-data="{ 'showModal': false }">
+       
+        <h1 class="my-6 text-2xl text-blue-500">
+        <span class="font-bold">MTA </span>Boilplate
+        </h1>
+
+        <button type="button" class="bg-transparent border shadow-lg border-blue-500  text-blue-500 font-bold my-6 py-2 px-4"
+            @click="showModal = true">
+            Start Building!
+        </button>
+
+        <div class="overflow-auto" style="background-color: rgba(0,0,0,0.5)" x-show="showModal"
+            :class="{ 'absolute inset-0 z-10 flex items-center justify-center': showModal }">
+            <div class="bg-blue-500 text-orange-100 text-center w-11/12 md:max-w-md mx-auto rounded shadow-lg py-4 px-6" x-show="showModal"
+                @click.away="showModal = false">
+                <p>Alpine.js is working</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
