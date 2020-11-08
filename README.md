@@ -1,4 +1,4 @@
-# mta-boilplate
+# MTA Boilplate
 
 Laravel Mix, Tailwind CSS and Alpine.js Boilplate preset
 
